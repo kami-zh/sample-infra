@@ -5,5 +5,4 @@ rbenv_ruby node[:ruby][:version] do
   global true
 end
 
-gem_package 'bundler' do
-end
+gem_package 'bundler'
