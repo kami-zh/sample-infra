@@ -5,6 +5,7 @@
   "description": "",
   "run_list": [
     "recipe[user::data_bag]",
+    "recipe[openssh]",
     "recipe[ruby]",
     "recipe[mysql]",
     "recipe[database]",
@@ -12,6 +13,13 @@
   ],
   "default_attributes": {
     "users": ["sample"],
+    "openssh": {
+      "server": {
+        "port": "22",
+        "permit_root_login": "no",
+        "password_authentication": "no"
+      }
+    },
     "ruby": {
       "version": "2.1.2"
     },
