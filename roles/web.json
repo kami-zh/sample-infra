@@ -4,12 +4,14 @@
   "json_class": "Chef::Role",
   "description": "",
   "run_list": [
+    "recipe[user::data_bag]",
     "recipe[ruby]",
     "recipe[mysql]",
     "recipe[database]",
     "recipe[resolv]"
   ],
   "default_attributes": {
+    "users": ["sample"],
     "ruby": {
       "version": "2.1.2"
     },

@@ -2,6 +2,7 @@ DEPENDENCIES
   database
   mysql
   rbenv
+  user
 
 GRAPH
   apt (2.4.0)
@@ -44,6 +45,7 @@ GRAPH
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  user (0.3.0)
   windows (1.33.1)
     chef_handler (>= 0.0.0)
   xfs (1.1.0)
