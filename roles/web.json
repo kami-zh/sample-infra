@@ -5,6 +5,7 @@
   "description": "",
   "run_list": [
     "recipe[user::data_bag]",
+    "recipe[sudo]",
     "recipe[openssh]",
     "recipe[ruby]",
     "recipe[mysql]",
@@ -13,6 +14,12 @@
   ],
   "default_attributes": {
     "users": ["sample"],
+    "authorization": {
+      "sudo": {
+        "users": ["sample"],
+        "passwordless": "true"
+      }
+    },
     "openssh": {
       "server": {
         "port": "22",
