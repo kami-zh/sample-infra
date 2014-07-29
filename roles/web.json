@@ -31,7 +31,7 @@
       "version": "2.1.2"
     },
     "rbenv": {
-      "group_users": ["vagrant"]
+      "group_users": ["sample"]
     },
     "mysql": {
       "version": "5.6"
