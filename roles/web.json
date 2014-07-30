@@ -9,6 +9,7 @@
     "recipe[openssh]",
     "recipe[iptables]",
     "recipe[ruby]",
+    "recipe[nginx]",
     "recipe[mysql]",
     "recipe[database]",
     "recipe[resolv]"
@@ -33,6 +34,10 @@
     },
     "rbenv": {
       "group_users": ["sample"]
+    },
+    "nginx": {
+      "version": "1.6.0",
+      "repo_source": "nginx"
     },
     "mysql": {
       "version": "5.6"
