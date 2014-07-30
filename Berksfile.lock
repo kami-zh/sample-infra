@@ -3,6 +3,7 @@ DEPENDENCIES
   mysql
   openssh
   rbenv
+  simple_iptables
   sudo
   user
 
@@ -50,6 +51,7 @@ GRAPH
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  simple_iptables (0.6.5)
   sudo (2.6.0)
   user (0.3.0)
   windows (1.33.1)

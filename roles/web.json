@@ -7,6 +7,7 @@
     "recipe[user::data_bag]",
     "recipe[sudo]",
     "recipe[openssh]",
+    "recipe[iptables]",
     "recipe[ruby]",
     "recipe[mysql]",
     "recipe[database]",
